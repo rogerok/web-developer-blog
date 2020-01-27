@@ -1,0 +1,56 @@
+.container
+    width: 100%
+    max-width: 1170px
+    margin: 0 auto
+.section
+    padding: 123px 0 125px 0
+    &__header
+        width: 100%
+        max-width: 620px
+        text-align: center
+        margin: 0 auto 127px
+    &__title
+        font-size: 30px
+        font-weight: 700
+        margin-bottom: 29px
+    &__subtitle
+        font-size: 15px
+        font-weight: 400
+    &--blue
+        padding: 173px 0 95px 0 
+        background-color: $color-blue
+    &--blue-pad
+        padding: 125px 0
+        background-color: $color-blue
+    &--grey
+        background-color: #f0f1f1
+        padding: 127px 0 125px
+    &-form
+        padding: 128px 0 110px
+        background-color: #232222
+        background: url('../img/section-form__bg.jpg') center (center / cover) no-repeat
+        &__header
+
+        &__title
+            color: #ffffff
+            margin-bottom: 36px
+        &__subtitle
+            color: #fff
+            margin-bottom: 101px
+.btn
+    padding: 20px 33px
+    color: $color--white
+    font-size: 20px
+    font-weight: 700
+    font-family: roboto
+    letter-spacing: 1px
+    text-align: center
+    text-transform: uppercase
+    transition: 0.1s linear
+    &--white
+        border: 3px solid #f8f8f8
+        margin-right: 25px
+        &:hover
+            @include btn--hover
+    &--green
+        background-color: $color--green

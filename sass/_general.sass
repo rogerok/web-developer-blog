@@ -1,0 +1,388 @@
+.header
+    padding: 42px 0 44px 
+    color: $color--black
+    display: none
+    &__nav
+        display: flex
+        justify-content: space-around
+        align-items: center
+.nav
+    &__logo
+        flex : 0 1 39.3%
+        font-size: 25px
+        font-weight: 700
+    &__link
+        font-size: 20px
+        font-weight: 600
+        color: $color--black
+        text-align: center
+        letter-spacing: 1px
+/*main page*/
+.main
+    padding: 183px 0 76px
+    background: url('../img/main__bg.jpg') center (center / cover) no-repeat
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        &::after
+            content: ''
+            display: block
+            margin: 105px auto 0
+            width: 15px
+            height: 15px
+            border:
+                left: 5px solid $color--white
+                bottom: 5px solid $color--white
+            transform: rotate(-45deg)
+    &__header
+        color: $color--white
+        text-align: center
+        margin-bottom: 108px
+    &__title
+        font-size: 60px
+        font-weight: 700px
+        margin-bottom: 40px
+    &__subtitle
+        font-size: 22px
+        font-weight: 400
+/*about us*/
+.about
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__item
+        flex: 0 1 20%
+        text-align: center
+    &__img
+        display: block
+        margin: 0 auto
+    &__title
+        margin-top: 39px
+        font-size: 20px
+        font-weight: 700
+        white-space: nowrap
+    &__text
+        margin-top: 26px
+        font-weight: 400
+/*services*/
+.services
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        text-align: center
+        color: $color--black
+    &__inner
+        display: flex
+        flex-direction: column
+        flex: 0 1 31.6%
+        margin-bottom: 31px
+        transition: 0.2s linear
+        background-color: $color--white
+        &:hover
+            box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.35)
+            color: $color--white
+            background-color: $color--green
+            .services__btn
+                color: $color--white
+                border-color: $color--white
+    &__item
+        padding: 0 50px 0 50px
+    &__icon
+        margin-top: 58px
+    &__title
+        margin: 38px 0 26px
+        font-size: 20px
+        font-weight: 600
+        //color: $color--black
+    &__text
+        margin-bottom: 43px
+        font-size: 15px
+        font-weight: 300
+        line-height: 1.67
+        //color: #212121
+    &__btn
+        display: block
+        max-width: 150px
+        margin: 0 auto 50px
+        font-size: 20px
+        font-weight: 600
+        color: $color--black
+        border: 2px solid $color--black
+        padding: 11px 0px
+/*works* здесь поебота с кнопками/
+.works
+    &__wrapper
+    &__nav
+        display: inline-flex
+        justify-content: center
+        margin-bottom: 119px
+        width: 100%
+        text-align: center
+        &-btn
+            font-size: 20px
+            font-weight: 600
+            color: $color--black
+            border: 2px solid $color--green
+            margin-right: 20px
+            padding: 10px 25px
+            transition: 0.2s linear 
+            &:hover
+                background-color: $color--green
+                color: $color--white
+            &_small
+                padding: 11px 31px 
+    &__btn
+        text-align: center
+        margin-top: 119px
+    &__content
+.card-works
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        flex: 0 1 31.58%
+        margin-bottom: 30px
+        &:hover
+            .card-works
+                &__img
+                    opacity: .3
+                &__text
+                    opacity: 1
+    &__inner
+        position: relative
+        background-color: $color--black
+    &__img
+        display: block
+        max-width: 100%
+        transition: opacity .1s linear
+    &__text
+        width: 100%
+        position: absolute
+        top: 38%
+        left: 0
+        text-align: center
+        color: $color--white
+        opacity: 0
+        transition: opacity .1s linear
+    &__title
+        font-size: 20px
+        font-weight: 600
+        line-height: 1.47
+        letter-spacing: 1px
+    &__subtitle
+        font-size: 15px
+        font-weight: 600
+        line-height: 1.47
+        letter-spacing: 1.1px
+/*price*/
+.price
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &-col
+        flex: 0 1 31.62%
+        background-color: $color--white
+        transition: 0.2s linear
+        &:hover
+            box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35)
+            .price__btn
+                background-color: $color--green
+                border: 2px solid $color--green
+                text-transform: uppercase
+                color: $color--white
+        &__body
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-bottom: 63px
+        &__header
+            width: 100%
+            padding: 48px 0 67px
+            background-color: #3949ab
+            text-align: center
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+            color: $color--white
+        &__title
+            font-size: 25px
+            letter-spacing: 1.25px
+            margin-bottom: 37px
+        &__subtitle
+            font-size: 17px
+            line-height: 1.29
+            positon: relative
+            sup
+                font-size: 25px
+            span
+                font-size: 50px
+                letter-spacing: 2.5px
+                line-height: 0.44
+        &__content
+            width: 100%
+            text-align: center
+        &__text-wrapper
+            margin-top: 49px
+        &__text
+            width: (96+96)/370*100%
+            margin: 0 auto 38px
+            padding-bottom: 14px
+            font-size: 17px
+            font-weight: 300
+            color: $color--black
+            border-bottom: 1px solid rgba(#000, .3)
+            line-height: 1.29
+            letter-spacing: 0.85px
+        &__btn
+            margin-top: 66px
+    &__btn
+        padding: 23px 33px 22px
+        border: 2px solid #000000
+        color: #000
+        font-size: 20px
+        font-weight: 600
+        transition: .2s linear
+/*team*/
+.team
+    &__wrapper
+        display: flex
+        justify-content: space-between
+.team-col
+    flex: 0 1 31.62%
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img
+        max-width: 100%
+        border-radius: 10px
+    &__name
+        margin-top: 38px
+        font-size: 20px
+        font-weight: 600
+        line-height: 1.1
+        letter-spacing: 1px
+        color: $color--black
+    &__prof
+        margin-top: 12px
+        font-size: 15px
+        font-weight: 300
+        line-height: 1.47
+        letter-spacing: 0.75px
+        color: $color--black
+    &__social
+        margin-top: 29px
+        //width: 72.97%
+    &__social-link
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 50px
+        height: 50px
+        border-radius: 10px
+        background-color: #f0f1f1
+        color: $color--green
+        transition: .2s linear
+        &:hover
+            background-color: #3949ab
+            color: $color--white
+        i
+            font-size: 30px
+/*blog section*/
+.blog
+    &__wrapper
+    &__img
+        max-width: 100%
+.blog-text
+    margin-top: 61px
+    &__header
+        font-size: 25px
+        font-weight: 600
+        color: $color--green
+    &__img
+    &__info
+        margin-top: 28px 
+        &-icon
+            margin-right: 15px
+            color: $color--black
+            font-size: 17px
+            font-weight: 300
+        &-text
+            margin-right: 40px
+            color: $color--black
+            font-size: 17px
+            font-weight: 300
+            letter-spacing: 0.85px
+    &__descr
+        width: 78.6%
+        margin-top: 32px
+        font-size: 15px
+        font-weight: 400
+        line-height: 1.47
+        letter-spacing: 0.75px
+        text-align: left
+        color: $color--black
+        padding-right: 52px
+        white-space: pre-wrap
+.row
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__content
+        flex: 0 1 48.72%
+        &_reverse
+            order: -1
+/*form section*/
+.section-form
+    display: none
+.contacts
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__content
+        flex: 0 1 23.08%
+        text-align: center
+    &__icon
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 105px
+        height: 105px
+        border-radius: 100%
+        background-color: #3949ab
+        &-link
+            i
+                font-size: 60px
+                color: #fff
+    &__info
+        margin-top: 39px
+    &__link
+        font-size: 20px
+        font-weight: 600
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.4
+        letter-spacing: 1px
+        text-align: center
+        color: #ffffff
+/* form*/
+.contacts-form
+    max-width: 1034px
+    width: 100%
+    margin: 0 auto
+    &__user
+        margin-top: 79px
+        border: none
+        padding: 0
+    &__user-info
+        width: 42%
+        padding: 35px 21px
+        border-radius: 10px
+        outline: none
+    &__user-name
+        margin-right: 31px
+    &__user-message
+        max-width: 1031px
+        width: 100%
+        margin-top: 33px
+        border-radius: 10px
